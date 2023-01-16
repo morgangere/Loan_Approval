@@ -23,11 +23,32 @@ loan will default?
 9. Was anything found that significantly increase the chance that a small business loan 
 does not default?
 ### Increased risk of small business loans
+The loans were grouped into paid and not paid and the percentages of each was examined this showed that while most loans types made up simialr percentages of each (example: around 40% of both paid and defualted loans are due to debt consolidation) small business loans make up 5.5% of the paid in full loans and 11% of the defaulted loans. 
+
+![image](https://user-images.githubusercontent.com/118774600/212776674-f1d09d96-130e-4bb5-b24d-9c0834a70e6f.png)
 
 ### Scrapping and MongoDB
+
+Tweets were scrapped out of twitter using snscrape and placed into a list of dictionaries, one tweet per dictionary, these were then saved into a mongo data base so the same tweets could be used for the entire process.
+
 ### Insights
+Similar to how the information about the small business loans were grouped and aggregated to find how each percentage of the total the loan types made up; the data was separated into different groupings for many of the questions preposed at the beginning.  These findings were graphed for easy understanding and a few results are shown below.  This process was also done strictly on small business loans to see how each variable changes from all loan types vs. just small business loans.
+
+![image](https://user-images.githubusercontent.com/118774600/212777428-1fc9033d-4a7c-4293-b683-ed6567ac503d.png)
+
+![image](https://user-images.githubusercontent.com/118774600/212777453-c2d20c9b-915b-47df-b7ca-f2345a635c0d.png)
+
+![image](https://user-images.githubusercontent.com/118774600/212777493-17090c4e-6695-417d-b91c-adc5662fb637.png)
+
+![image](https://user-images.githubusercontent.com/118774600/212777516-725500ee-acce-406a-96a9-ac7bd0704f67.png)
+
 ### Using regular expression on tweets
+Phrases were placed into a regular expression and used to search through tweets to see if tweets could be found that would indicate a business is a higher risk.  Dunkin Donuts and Starbucks were used at first and now tweets were found as an example of a business that would be a high risk a bankrupt company (toys-R-us) was used and many tweets were able to be pulled out and identified as cause for concern.
 ### Machine Learning
+The data was split 80/20 for training and testing.  Decision tree, Naive Bayes, SVM, and Random Forest were used to predict if the borrower would defualt or pay back the loan.  The results of Accuracy, Precision, and Recall were graphed along side the Original lendingtree.com percentage of loans being paid back or defaulting. 
+
+![image](https://user-images.githubusercontent.com/118774600/212778414-7106a5da-d6aa-4dd6-b810-f84beca5e691.png)
+
 ### Results (Answers)
 1. How does the average monthly amount due change in loans that were paid back vs loans 
 that were not paid?
@@ -100,4 +121,6 @@ tweets about the business in question can help identify if a small business is a
 risk of defaulting. Also, the income of the potential borrower can indicate that a 
 closer look at them may be required. 
 
-### Paper
+### Report
+The report goes into more detail showing how the coding was actually preformed and it is explained along with further insights not shown in this readme.  It also contains a sentiment analysis.
+
