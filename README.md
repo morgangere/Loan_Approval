@@ -1,4 +1,12 @@
 # Loan_Approval
+### Required Tools
+
+Jupyter Notebook
+
+Excel
+
+PDF Reader
+
 ### Overview
 The original task was to use two data set types one structured and one unstructured. The structured data set was from lendingtree.com obtained from kaggle, it consisted of banking information on past loans and showed if a borrower had paid the loan back in full or defaulted on the loan.  There were many other types of information such as fico scores, annual income, and debt-to-income ratio to name a few. This data was used to gain insight into how these different variables change if a borrower pays back a loan or defaults and then using machine learning predict if a potential borrower would default on a loan or not.  Upon inspection of the data set it was concluded that small businesses loans had a much higher rate of defaulting.
 The unstructured data was tweets obtained about different businesses, to use regular expressions and create a way to determine if the small business held high risk based on what customers were saying about them.  These tweets were scrapped and placed into a mongo data base. 
