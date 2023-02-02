@@ -8,7 +8,7 @@ Excel
 PDF Reader
 
 ### Overview
-The original task was to use two data set types one structured and one unstructured. The structured data set was from lendingtree.com obtained from kaggle, it consisted of banking information on past loans and showed if a borrower had paid the loan back in full or defaulted on the loan.  There were many other types of information such as fico scores, annual income, and debt-to-income ratio to name a few. This data was used to gain insight into how these different variables change if a borrower pays back a loan or defaults and then using machine learning predict if a potential borrower would default on a loan or not.  Upon inspection of the data set it was concluded that small businesses loans had a much higher rate of defaulting.
+The original task was to use two data set types one structured and one unstructured. The structured data set was from lendingtree.com obtained from Kaggle, it consisted of banking information on past loans and showed if a borrower had paid the loan back in full or defaulted on the loan.  There were many other types of information such as fico scores, annual income, and debt-to-income ratio to name a few. This data was used to gain insight into how these different variables change if a borrower pays back a loan or defaults and then using machine learning predict if a potential borrower would default on a loan or not.  Upon inspection of the data set it was concluded that small businesses loans had a much higher rate of defaulting.
 The unstructured data was tweets obtained about different businesses, to use regular expressions and create a way to determine if the small business held high risk based on what customers were saying about them.  These tweets were scrapped and placed into a mongo data base. 
 
 ### Questions
@@ -31,7 +31,7 @@ loan will default?
 9. Was anything found that significantly increase the chance that a small business loan 
 does not default?
 ### Increased risk of small business loans
-The loans were grouped into paid and not paid and the percentages of each was examined this showed that while most loans types made up simialr percentages of each (example: around 40% of both paid and defualted loans are due to debt consolidation) small business loans make up 5.5% of the paid in full loans and 11% of the defaulted loans. 
+The loans were grouped into paid and not paid and the percentages of each was examined this showed that while most loan types made up similar percentages of each (example: around 40% of both paid and defaulted loans are due to debt consolidation) small business loans make up 5.5% of the paid in full loans and 11% of the defaulted loans. 
 
 ![image](https://user-images.githubusercontent.com/118774600/212776674-f1d09d96-130e-4bb5-b24d-9c0834a70e6f.png)
 
@@ -40,7 +40,7 @@ The loans were grouped into paid and not paid and the percentages of each was ex
 Tweets were scrapped out of twitter using snscrape and placed into a list of dictionaries, one tweet per dictionary, these were then saved into a mongo data base so the same tweets could be used for the entire process.
 
 ### Insights
-Similar to how the information about the small business loans were grouped and aggregated to find how each percentage of the total the loan types made up; the data was separated into different groupings for many of the questions preposed at the beginning.  These findings were graphed for easy understanding and a few results are shown below.  This process was also done strictly on small business loans to see how each variable changes from all loan types vs. just small business loans.
+Similar to how the information about the small business loans were grouped and aggregated to find how each percentage of the total the loan types made up; the data was separated into different groupings for many of the questions proposed at the beginning.  These findings were graphed for easy understanding and a few results are shown below.  This process was also done strictly on small business loans to see how each variable changes from all loan types vs. just small business loans.
 
 ![image](https://user-images.githubusercontent.com/118774600/212777428-1fc9033d-4a7c-4293-b683-ed6567ac503d.png)
 
@@ -53,7 +53,7 @@ Similar to how the information about the small business loans were grouped and a
 ### Using regular expression on tweets
 Phrases were placed into a regular expression and used to search through tweets to see if tweets could be found that would indicate a business is a higher risk.  Dunkin Donuts and Starbucks were used at first and now tweets were found as an example of a business that would be a high risk a bankrupt company (toys-R-us) was used and many tweets were able to be pulled out and identified as cause for concern.
 ### Machine Learning
-The data was split 80/20 for training and testing.  Decision tree, Naive Bayes, SVM, and Random Forest were used to predict if the borrower would defualt or pay back the loan.  The results of Accuracy, Precision, and Recall were graphed along side the Original lendingtree.com percentage of loans being paid back or defaulting. 
+The data was split 80/20 for training and testing.  Decision tree, Naive Bayes, SVM, and Random Forest were used to predict if the borrower would default or pay back the loan.  The results of Accuracy, Precision, and Recall were graphed alongside the Original lendingtree.com percentage of loans being paid back or defaulting. 
 
 ![image](https://user-images.githubusercontent.com/118774600/212778414-7106a5da-d6aa-4dd6-b810-f84beca5e691.png)
 
@@ -130,5 +130,5 @@ risk of defaulting. Also, the income of the potential borrower can indicate that
 closer look at them may be required. 
 
 ### Report
-The report goes into more detail showing how the coding was actually preformed and it is explained along with further insights not shown in this readme.  It also contains a sentiment analysis.
+The report goes into more detail showing how the coding was preformed and it is explained along with further insights not shown in this readme.  It also contains a sentiment analysis.
 
